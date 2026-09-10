@@ -7,7 +7,7 @@
 /* ── CONFIGURAÇÃO CENTRAL DE CONVERSÃO RESPONDI APP ──────────────────────── */
 // CONFIGURE AQUI O LINK OFICIAL DO FORMULÁRIO RESPONDI APP QUANDO GERADO:
 const FORMS = {
-  default:   "https://form.respondi.app/destac",       // Formulário Geral / Cotação
+  default:   "https://form.respondi.app/destac",       // Formulário Geral / Orçamento
   belka:     "https://form.respondi.app/destac-belka", // Oferta Belka
   arquitech: "https://form.respondi.app/destac-arq",   // Oferta Arquitech
   revenda:   "https://form.respondi.app/destac-cnpj"   // Revenda / Construtoras
