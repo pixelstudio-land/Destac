@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Destac Pisos | Pisos Laminados e Vinílicos a Preço de Revenda — Sem Burocracia</title>
+  <meta name="description" content="Pisos Laminados e Vinílicos com preço direto de fábrica. Compre no CPF ou CNPJ com condições especiais para revendedores. Solicite sua cotação rápida sem burocracia!">
+  <meta name="keywords" content="destac pisos, piso vinilico, piso laminado, piso vinilico belka, piso vinilico arquitech, pisos atacado revenda, pisos sem burocracia, cotação piso vinilico">
+
+  <!-- OpenGraph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pixelstudio-land.github.io/Destac/">
+  <meta property="og:title" content="Destac Pisos | Pisos Laminados e Vinílicos a Preço de Fábrica">
+  <meta property="og:description" content="Qualidade que seu cliente confia. Facilidade e preço que sua empresa precisa. Compre com CPF ou CNPJ sem complicação.">
+  <meta property="og:image" content="images/hero-bg.jpg">
+  <meta property="og:site_name" content="Destac Pisos">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+
+  <!-- Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeGoodsStore",
+    "name": "Destac Pisos — Design Moderno",
+    "image": "https://pixelstudio-land.github.io/Destac/images/hero-bg.jpg",
+    "description": "Distribuição e venda de pisos laminados e vinílicos de alta qualidade a preço de revenda para CPF e CNPJ.",
+    "priceRange": "R$ 48,99 - R$ 150,00",
+    "currenciesAccepted": "BRL",
+    "paymentAccepted": "Pix, Boleto, Cartão de Crédito, Transferência"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER FLUTUANTE GLASSMORPHISM
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-link" aria-label="Destac Pisos - Início">
+        <img src="images/logo.svg" alt="Destac Pisos — Design Moderno" class="logo-img" width="190" height="48">
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Menu Principal">
+        <ul class="nav-list">
+          <li><a href="#produtos" class="nav-link">Produtos</a></li>
+          <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+          <li><a href="#calculadora" class="nav-link">Simular m²</a></li>
+          <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+          <li><a href="#galeria" class="nav-link">Ambientes</a></li>
+          <li><a href="#depoimentos" class="nav-link">Avaliações</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#calculadora" class="btn btn-sm btn-outline header-sim-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+          Simulador
+        </a>
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pisos%20na%20Destac%20Pisos." class="btn btn-sm btn-primary header-cta-btn" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-header">
+          <span>Solicitar Cotação</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <img src="images/logo.svg" alt="Destac Pisos" width="160">
+      <button class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Fechar Menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#produtos" class="mobile-nav-link">Produtos</a></li>
+      <li><a href="#ofertas" class="mobile-nav-link">Ofertas Especiais</a></li>
+      <li><a href="#calculadora" class="mobile-nav-link">Simulador de m²</a></li>
+      <li><a href="#diferenciais" class="mobile-nav-link">Diferenciais</a></li>
+      <li><a href="#galeria" class="mobile-nav-link">Galeria de Ambientes</a></li>
+      <li><a href="#depoimentos" class="mobile-nav-link">Depoimentos</a></li>
+      <li><a href="#faq" class="mobile-nav-link">Perguntas Frequentes</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destac%20Pisos%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o." class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-drawer">
+        Falar com Especialista no WhatsApp
+      </a>
+      <p class="mobile-drawer-note">Atendimento rápido para CPF e CNPJ</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION DE ALTO IMPACTO
+         ========================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-wrapper">
+        <img src="images/hero-bg.jpg" alt="Ambiente moderno com piso vinílico e laminado Destac Pisos" class="hero-bg-img" fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <div class="hero-mesh"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          
+          <div class="hero-tag reveal-fade">
+            <span class="hero-tag-pulse"></span>
+            <span class="hero-tag-text">PISOS LAMINADOS E VINÍLICOS DIRETO DA FÁBRICA</span>
+          </div>
+
+          <h1 class="hero-title reveal-up">
+            Sem burocracia, <br>
+            <span class="highlight-text">só facilidade!</span>
+          </h1>
+
+          <p class="hero-subtitle reveal-up delay-1">
+            Qualidade que seu cliente confia. Preço e agilidade que você precisa para lucrar. Compre no <strong>CPF ou CNPJ</strong> com condições exclusivas para revendedores, construtoras e consumidores finais.
+          </p>
+
+          <div class="hero-badges reveal-up delay-2">
+            <div class="hero-badge-item">
+              <div class="badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span>Preço Direto de Fábrica</span>
+            </div>
+            <div class="hero-badge-item">
+              <div class="badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              </div>
+              <span>CPF ou CNPJ Sem Complicação</span>
+            </div>
+            <div class="hero-badge-item">
+              <div class="badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <span>Cotação Rápida em Minutos</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group reveal-up delay-3">
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pisos%20com%20a%20Destac%20Pisos." class="btn btn-lg btn-primary btn-glow" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-hero">
+              <span>SOLICITAR MINHA COTAÇÃO AGORA</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#produtos" class="btn btn-lg btn-glass">
+              <span>Conhecer os Produtos</span>
+            </a>
+          </div>
+
+          <div class="hero-stats reveal-up delay-4">
+            <div class="stat-item">
+              <span class="stat-num" data-target="100">100%</span>
+              <span class="stat-label">Resistente à Água (Vinílico)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">R$ 48,99</span>
+              <span class="stat-label">Vinílico a partir de (m²)</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-num">+50</span>
+              <span class="stat-label">Padrões & Texturas Exclusivas</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         OFERTAS EM DESTAQUE (DIRETO DO BRIEFING)
+         ========================================== -->
+    <section class="section section-offers" id="ofertas">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="badge-pill">OPORTUNIDADES DE LOTE</span>
+          <h2 class="section-title">Ofertas e Condições Comerciais Exclusivas</h2>
+          <p class="section-subtitle">Mais beleza e praticidade para o seu ambiente com preços imbatíveis direto da fábrica.</p>
+        </div>
+
+        <div class="offers-grid">
+          
+          <!-- Card Belka -->
+          <div class="offer-card card-belka reveal-up">
+            <div class="offer-badge-top">LOTE ESPECIAL</div>
+            <div class="offer-brand-logo">
+              <span class="brand-chip">BELKA PISOS</span>
+            </div>
+            <div class="offer-image-box">
+              <img src="images/piso-vinilico-belka.jpg" alt="Piso Vinílico Belka Amadeirado" class="offer-img" loading="lazy">
+              <div class="offer-tag-float">100% Resistente à Água</div>
+            </div>
+            <div class="offer-info">
+              <h3 class="offer-title">Piso Vinílico Belka</h3>
+              <p class="offer-desc">Visual moderno, textura acetinada amadeirada, conforto térmico superior e máxima facilidade de limpeza diária.</p>
+              
+              <ul class="offer-features">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E1A22" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Conforto acústico e térmico</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E1A22" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Resistente à água e umidade</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E1A22" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Preço direto da fábrica</li>
+              </ul>
+
+              <div class="offer-price-block">
+                <div class="price-prefix">A partir de</div>
+                <div class="price-value">
+                  <span class="currency">R$</span>
+                  <span class="amount">48</span>
+                  <span class="cents">,99</span>
+                  <span class="unit">/m²</span>
+                </div>
+                <div class="price-terms">À vista • CPF ou CNPJ • Preço de Revenda</div>
+              </div>
+
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20oferta%20do%20Piso%20Vin%C3%ADlico%20BELKA%20por%20R$%2048,99/m%C2%B2." class="btn btn-primary btn-block btn-offer" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-belka">
+                <span>Garantir Oferta Belka</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card Arquitech -->
+          <div class="offer-card card-arquitech card-featured reveal-up delay-1">
+            <div class="offer-badge-top featured-tag">MAIS PROCURADO</div>
+            <div class="offer-brand-logo">
+              <span class="brand-chip">ARQUITECH REVESTIMENTOS</span>
+            </div>
+            <div class="offer-image-box">
+              <img src="images/piso-vinilico-arquitech.jpg" alt="Piso Vinílico Arquitech de Alta Densidade" class="offer-img" loading="lazy">
+              <div class="offer-tag-float">Alta Durabilidade</div>
+            </div>
+            <div class="offer-info">
+              <h3 class="offer-title">Piso Vinílico Arquitech</h3>
+              <p class="offer-desc">Linha premium com altíssima resistência a riscos, tráfego intenso e acabamento de alto padrão estético para residências e empresas.</p>
+              
+              <ul class="offer-features">
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E1A22" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Altíssima resistência ao tráfego</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E1A22" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Camada de proteção anti-riscos</li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9E1A22" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Praticidade e elegância impecável</li>
+              </ul>
+
+              <div class="offer-price-block">
+                <div class="price-prefix">A partir de</div>
+                <div class="price-value">
+                  <span class="currency">R$</span>
+                  <span class="amount">50</span>
+                  <span class="cents">,00</span>
+                  <span class="unit">/m²</span>
+                </div>
+                <div class="price-terms">À vista • CPF ou CNPJ • Condições Especiais</div>
+              </div>
+
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20oferta%20do%20Piso%20Vin%C3%ADlico%20ARQUITECH%20por%20R$%2050,00/m%C2%B2." class="btn btn-primary btn-block btn-offer" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-arquitech">
+                <span>Garantir Oferta Arquitech</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner de Condições para Revenda e CPF/CNPJ -->
+        <div class="commercial-banner reveal-up">
+          <div class="commercial-banner-content">
+            <div class="commercial-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            </div>
+            <div>
+              <h4>É Arquiteto, Construtora ou Revendedor?</h4>
+              <p>Temos tabelas com margens agressivas e faturamento direto com atendimento prioritário.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Sou%20revendedor/arquiteto/construtor%20e%20gostaria%20de%20conhecer%20as%20condi%C3%A7%C3%B5es%20especiais%20da%20Destac%20Pisos." class="btn btn-sm btn-white" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-revenda">
+            Condições para Parceiros
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PRODUTOS PRINCIPAIS (VINÍLICO & LAMINADO)
+         ========================================== -->
+    <section class="section section-products" id="produtos">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="badge-pill">LINHA COMPLETA</span>
+          <h2 class="section-title">Piso Vinílico ou Laminado: Qual é o Ideal?</h2>
+          <p class="section-subtitle">Duas soluções completas para quem busca valorizar o ambiente com elegância e praticidade.</p>
+        </div>
+
+        <div class="products-duo">
+          
+          <!-- Produto 1: Vinílico -->
+          <div class="product-box reveal-up">
+            <div class="product-media">
+              <img src="images/vinilico-detalhe.jpg" alt="Piso Vinílico em detalhes de instalação" loading="lazy">
+              <span class="product-tag">100% Resistente à Água</span>
+            </div>
+            <div class="product-body">
+              <div class="product-header-badge">CONFORTO & PRATICIDADE</div>
+              <h3 class="product-heading">Piso Vinílico</h3>
+              <p class="product-text">
+                O queridinho da arquitetura contemporânea. Proporciona pisar suave, conforto térmico sem chão gelado e alta resistência ao contato com água e derramamentos.
+              </p>
+              
+              <div class="product-specs-grid">
+                <div class="spec-item">
+                  <span class="spec-icon">💧</span>
+                  <div>
+                    <strong>Resistência à Água</strong>
+                    <small>Ideal para cozinhas e lavabos</small>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-icon">✨</span>
+                  <div>
+                    <strong>Fácil Limpeza</strong>
+                    <small>Apenas pano úmido e detergente neutro</small>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-icon">🌡️</span>
+                  <div>
+                    <strong>Conforto Térmico</strong>
+                    <small>Agradável para andar descalço</small>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-icon">🔇</span>
+                  <div>
+                    <strong>Silêncio Acústico</strong>
+                    <small>Sem o 'toc-toc' de calçados</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-footer">
+                <a href="#calculadora" class="btn btn-outline btn-block" onclick="selectProductInCalc('vinilico')">
+                  Simular Cotação do Vinílico
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 2: Laminado -->
+          <div class="product-box reveal-up delay-1">
+            <div class="product-media">
+              <img src="images/laminado-detalhe.jpg" alt="Piso Laminado textura amadeirada nobre" loading="lazy">
+              <span class="product-tag">Excelente Custo-Benefício</span>
+            </div>
+            <div class="product-body">
+              <div class="product-header-badge">ELEGÂNCIA & TRADIÇÃO</div>
+              <h3 class="product-heading">Piso Laminado</h3>
+              <p class="product-text">
+                A sofisticação atemporal dos veios da madeira com instalação ultra rápida pelo sistema de encaixe. Excelente para quartos, salas e escritórios.
+              </p>
+              
+              <div class="product-specs-grid">
+                <div class="spec-item">
+                  <span class="spec-icon">🌲</span>
+                  <div>
+                    <strong>Elegância Natural</strong>
+                    <small>Réplicas perfeitas de madeiras nobres</small>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-icon">🎨</span>
+                  <div>
+                    <strong>Variedade de Padrões</strong>
+                    <small>Do rústico ao minimalista claro</small>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-icon">⚡</span>
+                  <div>
+                    <strong>Instalação Rápida</strong>
+                    <small>Pronto para uso quase imediato</small>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <span class="spec-icon">💰</span>
+                  <div>
+                    <strong>Custo-Benefício</strong>
+                    <small>Maior economia por metro quadrado</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-footer">
+                <a href="#calculadora" class="btn btn-outline btn-block" onclick="selectProductInCalc('laminado')">
+                  Simular Cotação do Laminado
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CALCULADORA INTERATIVA DE m²
+         ========================================== -->
+    <section class="section section-calc" id="calculadora">
+      <div class="container">
+        <div class="calc-wrapper reveal-up">
+          
+          <div class="calc-info">
+            <span class="badge-pill">SIMULADOR INTELIGENTE</span>
+            <h2 class="calc-title">Simule o Investimento do seu Projeto</h2>
+            <p class="calc-desc">
+              Descubra uma estimativa aproximada em segundos e receba uma proposta personalizada e detalhada no seu WhatsApp.
+            </p>
+
+            <div class="calc-benefits">
+              <div class="benefit-row">
+                <div class="benefit-dot"></div>
+                <span>Valores sem surpresas e direto da fábrica</span>
+              </div>
+              <div class="benefit-row">
+                <div class="benefit-dot"></div>
+                <span>Cálculo adaptado para CPF ou CNPJ de revenda</span>
+              </div>
+              <div class="benefit-row">
+                <div class="benefit-dot"></div>
+                <span>Atendimento técnico para tirar todas as dúvidas</span>
+              </div>
+            </div>
+
+            <div class="calc-direct-card">
+              <img src="images/criativo-destac-01.jpg" alt="Destac Pisos Sem Burocracia" class="calc-thumb">
+              <div>
+                <strong>Sem Burocracia!</strong>
+                <p>Cotação rápida e atendimento especializado direto pelo WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário Calculadora -->
+          <div class="calc-form-card">
+            <h3 class="calc-form-title">Configurar Simulação</h3>
+            
+            <div class="form-group">
+              <label class="form-label">1. Escolha o Produto:</label>
+              <div class="calc-pills" id="calc-product-select">
+                <button type="button" class="calc-pill active" data-product="belka" data-price="48.99">
+                  <span>Vinílico Belka</span>
+                  <small>R$ 48,99/m²</small>
+                </button>
+                <button type="button" class="calc-pill" data-product="arquitech" data-price="50.00">
+                  <span>Vinílico Arquitech</span>
+                  <small>R$ 50,00/m²</small>
+                </button>
+                <button type="button" class="calc-pill" data-product="laminado" data-price="42.90">
+                  <span>Laminado Premium</span>
+                  <small>A partir de R$ 42,90/m²</small>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">2. Tipo de Compra:</label>
+              <div class="radio-group">
+                <label class="radio-custom">
+                  <input type="radio" name="customer-type" value="CPF / Residencial" checked>
+                  <span class="radio-btn">Pessoa Física (CPF / Reforma / Construção)</span>
+                </label>
+                <label class="radio-custom">
+                  <input type="radio" name="customer-type" value="CNPJ / Revenda / Construtora">
+                  <span class="radio-btn">Pessoa Jurídica (CNPJ / Revenda / Construtora)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="range-header">
+                <label class="form-label" for="metragem-input">3. Metragem Estimada do Ambiente:</label>
+                <span class="range-val-badge"><span id="metragem-display">35</span> m²</span>
+              </div>
+              <input type="range" id="metragem-slider" min="10" max="300" step="5" value="35" class="range-slider">
+              <div class="range-marks">
+                <span>10 m²</span>
+                <span>100 m²</span>
+                <span>200 m²</span>
+                <span>300+ m²</span>
+              </div>
+            </div>
+
+            <!-- Resultado do Cálculo -->
+            <div class="calc-result-box">
+              <div class="result-label">Estimativa Total do Material:</div>
+              <div class="result-value">
+                <span class="result-currency">R$</span>
+                <span id="calc-total-display">1.714</span>
+                <span class="result-cents" id="calc-cents-display">,65</span>
+              </div>
+              <p class="result-hint">*Valor à vista estimado do produto. Condições de frete e rodapés confirmadas pelo consultor.</p>
+            </div>
+
+            <a href="#" id="btn-calc-whatsapp" class="btn btn-primary btn-block btn-lg" target="_blank" rel="noopener noreferrer">
+              <span>Receber Proposta Completa no WhatsApp</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         DIFERENCIAIS COMERCIAIS
+         ========================================== -->
+    <section class="section section-diff" id="diferenciais">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="badge-pill">POR QUE ESCOLHER A DESTAC PISOS</span>
+          <h2 class="section-title">Mais Agilidade Para Sua Obra ou Empresa Lucrar</h2>
+          <p class="section-subtitle">Construímos nossa reputação fornecendo materiais de primeira linha com o atendimento mais ágil do mercado.</p>
+        </div>
+
+        <div class="diff-grid">
+          
+          <div class="diff-card reveal-up">
+            <div class="diff-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="diff-title">Produtos de Qualidade</h3>
+            <p class="diff-desc">Trabalhamos com marcas reconhecidas e certificadas com alto padrão de durabilidade e acabamento.</p>
+          </div>
+
+          <div class="diff-card reveal-up delay-1">
+            <div class="diff-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="diff-title">Variedade de Modelos</h3>
+            <p class="diff-desc">Ampla gama de texturas amadeiradas, tons claros, escuros e modernos para harmonizar com qualquer projeto.</p>
+          </div>
+
+          <div class="diff-card reveal-up delay-2">
+            <div class="diff-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="diff-title">Atendimento Especializado</h3>
+            <p class="diff-desc">Consultoria rápida para você escolher o piso correto de acordo com a umidade, uso e metragem.</p>
+          </div>
+
+          <div class="diff-card reveal-up">
+            <div class="diff-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3 class="diff-title">Compre com CPF ou CNPJ</h3>
+            <p class="diff-desc">Atendemos com total flexibilidade tanto clientes residenciais quanto empresas e obras corporativas.</p>
+          </div>
+
+          <div class="diff-card reveal-up delay-1">
+            <div class="diff-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="diff-title">Preços para Revendedores</h3>
+            <p class="diff-desc">Margens competitivas e condições especiais no atacado para lojas, construtores e revendedores autorizados.</p>
+          </div>
+
+          <div class="diff-card reveal-up delay-2">
+            <div class="diff-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="diff-title">Rápido e Sem Burocracia</h3>
+            <p class="diff-desc">Processo de compra direto ao ponto, cotações enviadas na hora e logística ágil para não atrasar sua obra.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         GALERIA DE AMBIENTES INSPIRADORES
+         ========================================== -->
+    <section class="section section-gallery" id="galeria">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="badge-pill">TRANSFORMAÇÃO REAL</span>
+          <h2 class="section-title">Galeria de Ambientes com Pisos Aplicados</h2>
+          <p class="section-subtitle">Veja como os pisos vinílicos e laminados elevam a estética e o valor de cada cômodo.</p>
+        </div>
+
+        <!-- Filtros de Galeria -->
+        <div class="gallery-filters reveal-up">
+          <button class="gallery-filter-btn active" data-filter="all">Todos os Projetos</button>
+          <button class="gallery-filter-btn" data-filter="sala">Salas & Livings</button>
+          <button class="gallery-filter-btn" data-filter="quarto">Quartos & Suítes</button>
+          <button class="gallery-filter-btn" data-filter="comercial">Comercial & Office</button>
+        </div>
+
+        <!-- Grid de Fotos -->
+        <div class="gallery-grid">
+          
+          <div class="gallery-item" data-category="sala" onclick="openLightbox(0)">
+            <img src="images/ambiente-living.jpg" alt="Sala de estar moderna com piso amadeirado" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Living Integrado</h4>
+              <p>Piso Vinílico Amadeirado Acetinado</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="sala" onclick="openLightbox(1)">
+            <img src="images/ambiente-sala.jpg" alt="Living contemporâneo com piso vinílico" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Sala Contemporânea</h4>
+              <p>Acabamento sem emendas aparentes</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="quarto" onclick="openLightbox(2)">
+            <img src="images/ambiente-quarto.jpg" alt="Quarto aconchegante com piso laminado" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Dormitório Master</h4>
+              <p>Conforto térmico e suavidade</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="quarto" onclick="openLightbox(3)">
+            <img src="images/ambiente-suite.jpg" alt="Suíte elegante com piso amadeirado" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Suíte de Alto Padrão</h4>
+              <p>Textura e sofisticação visual</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="comercial" onclick="openLightbox(4)">
+            <img src="images/ambiente-comercial.jpg" alt="Ambiente corporativo com piso vinílico resistente" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Espaço Corporativo & Comercial</h4>
+              <p>Alta resistência a tráfego intenso</p>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="sala" onclick="openLightbox(5)">
+            <img src="images/ambiente-decor.jpg" alt="Decoração moderna com piso laminado" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-zoom-icon">🔍</span>
+              <h4>Ambiente Decorado</h4>
+              <p>Harmonização perfeita com móveis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Modal Lightbox da Galeria -->
+    <div class="lightbox-modal" id="lightbox-modal">
+      <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+      <div class="lightbox-container">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Fechar Foto">&times;</button>
+        <button class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)" aria-label="Foto Anterior">&#10094;</button>
+        <div class="lightbox-content">
+          <img src="" id="lightbox-img" alt="Foto ampliada Destac Pisos">
+          <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)" aria-label="Próxima Foto">&#10095;</button>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         PROVA SOCIAL & DEPOIMENTOS
+         ========================================== -->
+    <section class="section section-reviews" id="depoimentos">
+      <div class="container">
+        <div class="section-header text-center reveal-up">
+          <span class="badge-pill">AVALIAÇÕES REAIS</span>
+          <h2 class="section-title">O que Dizem Nossos Clientes e Parceiros</h2>
+          <p class="section-subtitle">A confiança de quem já comprou e comprovou a qualidade Destac Pisos.</p>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <div class="review-card reveal-up">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Comprei o piso vinílico Belka para o meu apartamento inteiro. A facilidade de limpeza e o visual mudaram completamente o ambiente. Atendimento impecável e rápido!"
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">LM</div>
+              <div>
+                <strong>Larissa Mendes</strong>
+                <small>Cliente Residencial • Reforma Apartamento</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal-up delay-1">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Sou arquiteto e costumo especificar os pisos da Destac para meus clientes. O piso Arquitech tem uma resistência fantástica a riscos e a entrega é sempre pontual."
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">RF</div>
+              <div>
+                <strong>Rodrigo Faria</strong>
+                <small>Arquiteto & Designer de Interiores</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal-up delay-2">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Compramos via CNPJ com condições de revenda para nossa construtora. O preço direto de fábrica e a ausência de burocracia fizeram toda a diferença no nosso cronograma."
+            </p>
+            <div class="review-author">
+              <div class="author-avatar">MC</div>
+              <div>
+                <strong>Marcelo Carvalho</strong>
+                <small>Engenheiro / Construtora Horizonte</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FAQ — DÚVIDAS FREQUENTES
+         ========================================== -->
+    <section class="section section-faq" id="faq">
+      <div class="container faq-container">
+        <div class="section-header text-center reveal-up">
+          <span class="badge-pill">TIRE SUAS DÚVIDAS</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-subtitle">Tudo o que você precisa saber antes de comprar seus pisos.</p>
+        </div>
+
+        <div class="faq-accordion">
+          
+          <div class="faq-item reveal-up">
+            <button class="faq-question" aria-expanded="false">
+              <span>O piso vinílico pode ser lavado ou molhado?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! O piso vinílico é 100% resistente à água e não deforma com umidade ou contato com líquidos, sendo perfeito para salas, quartos, cozinhas e lavabos. Não recomendamos apenas a instalação dentro do box do chuveiro.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-question" aria-expanded="false">
+              <span>Posso instalar o piso por cima do piso antigo?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Sim! Em cerâmicas ou porcelanatos nivelados, o piso vinílico pode ser instalado aplicando uma massa niveladora por cima dos rejuntes, sem quebrar o piso existente. Isso economiza muito tempo e elimina o entulho da obra.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-question" aria-expanded="false">
+              <span>Vocês vendem para pessoa física (CPF) ou só empresas (CNPJ)?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Atendemos os dois perfis! Você pode comprar para sua residência no CPF com preços promocionais de fábrica ou no CNPJ com condições especiais de atacado para revenda e construtoras.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-question" aria-expanded="false">
+              <span>Qual é a diferença entre Piso Vinílico e Piso Laminado?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>O <strong>Piso Vinílico</strong> é feito de PVC, 100% resistente à água, silencioso ao caminhar e com grande conforto térmico. O <strong>Piso Laminado</strong> é composto de lâminas de madeira de alta densidade (HDF), tem encaixe rápido e excelente custo-benefício para ambientes secos como salas e dormitórios.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-question" aria-expanded="false">
+              <span>Como funciona o atendimento e a entrega?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Ao solicitar a cotação no WhatsApp, um de nossos especialistas calcula a metragem exata (já prevendo perdas e rodapés) e informa o prazo de expedição ágil para a sua localidade.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal-up">
+            <button class="faq-question" aria-expanded="false">
+              <span>Quais são as formas de pagamento disponíveis?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Oferecemos condições especiais com desconto para pagamentos à vista (Pix/Transferência) e parcelamento facilitado no cartão de crédito ou faturamento direto para CNPJ mediante aprovação cadastral rápida.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SEÇÃO FINAL DE FECHAMENTO (CTA PRINCIPAL)
+         ========================================== -->
+    <section class="section section-cta-final" id="contato">
+      <div class="cta-final-bg">
+        <img src="images/ambiente-moderno.jpg" alt="Ambiente transformado" loading="lazy">
+        <div class="cta-final-overlay"></div>
+      </div>
+
+      <div class="container cta-final-container">
+        <div class="cta-final-card reveal-up">
+          <div class="brand-badge-final">DESTAC PISOS • DESIGN MODERNO</div>
+          
+          <h2 class="cta-final-title">
+            Encontre o piso ideal para o seu projeto.
+          </h2>
+
+          <p class="cta-final-desc">
+            Escolha qualidade, praticidade e um acabamento que valoriza seu ambiente. Solicite sua cotação agora sem compromisso e sem burocracia!
+          </p>
+
+          <div class="cta-form-box">
+            <form id="lead-form" class="quick-lead-form">
+              <div class="form-row">
+                <input type="text" id="lead-name" placeholder="Seu Nome Completo" required class="form-input">
+                <input type="tel" id="lead-phone" placeholder="Seu WhatsApp com DDD" required class="form-input">
+              </div>
+              <div class="form-row">
+                <select id="lead-product" class="form-input">
+                  <option value="Piso Vinílico">Interesse em: Piso Vinílico</option>
+                  <option value="Piso Laminado">Interesse em: Piso Laminado</option>
+                  <option value="Piso Vinílico Belka (R$ 48,99/m²)">Oferta: Vinílico Belka (R$ 48,99/m²)</option>
+                  <option value="Piso Vinílico Arquitech (R$ 50,00/m²)">Oferta: Vinílico Arquitech (R$ 50,00/m²)</option>
+                  <option value="Condições de Revenda / CNPJ">Condições para Revenda / CNPJ</option>
+                </select>
+                <input type="number" id="lead-sqm" placeholder="Metragem Estimada (m²)" class="form-input" min="1">
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block btn-lead-submit">
+                <span>SOLICITAR MINHA COTAÇÃO NO WHATSAPP</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <div class="cta-guarantees">
+            <span>🔒 Seus dados estão 100% seguros</span>
+            <span>⚡ Resposta ágil no WhatsApp</span>
+            <span>🏷️ Preço garantido de fábrica</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       RODAPÉ
+       ========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-col footer-brand">
+        <img src="images/logo.svg" alt="Destac Pisos Logo" class="footer-logo" width="180">
+        <p class="footer-about">
+          Especialistas em pisos vinílicos e laminados com preço de fábrica, alta qualidade estética e atendimento sem burocracia para todo o Brasil.
+        </p>
+        <div class="footer-tagline">Qualidade que você sente no dia a dia!</div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#produtos">Pisos Vinílicos</a></li>
+          <li><a href="#produtos">Pisos Laminados</a></li>
+          <li><a href="#ofertas">Ofertas em Destaque</a></li>
+          <li><a href="#calculadora">Simulador de m²</a></li>
+          <li><a href="#galeria">Projetos Executados</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Condições Comerciais</h4>
+        <ul class="footer-links">
+          <li><a href="#diferenciais">Vendas no CPF e CNPJ</a></li>
+          <li><a href="#ofertas">Tabela para Revendedores</a></li>
+          <li><a href="#diferenciais">Preço Direto de Fábrica</a></li>
+          <li><a href="#faq">Formas de Pagamento</a></li>
+          <li><a href="#faq">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Atendimento Direto</h4>
+        <p class="footer-contact-item">
+          <strong>WhatsApp:</strong> (11) 99999-9999
+        </p>
+        <p class="footer-contact-item">
+          <strong>Horário:</strong> Seg a Sex das 08h às 18h | Sáb das 08h às 13h
+        </p>
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20da%20Destac%20Pisos." class="btn btn-sm btn-outline footer-btn" target="_blank" rel="noopener noreferrer">
+          Iniciar Conversa WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Destac Pisos — Design Moderno. Todos os direitos reservados.</p>
+        <p class="footer-pixel">Desenvolvido por Pixel</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       BARRA FIXA MOBILE DE CONVERSÃO
+       ========================================== -->
+  <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+    <div class="sticky-bar-info">
+      <span class="sticky-label">Pisos a partir de</span>
+      <span class="sticky-price">R$ 48,99/m²</span>
+    </div>
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destac%20Pisos%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o." class="btn btn-primary btn-sm sticky-cta" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-sticky">
+      <span>Pedir Cotação</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pisos%20na%20Destac%20Pisos." class="float-whatsapp" aria-label="Falar pelo WhatsApp" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-float">
+    <svg viewBox="0 0 32 32" class="float-whatsapp-icon"><path d="M16 2a14 14 0 0 0-12 21.2L2 30l7-1.8A14 14 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.8-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.4A11.5 11.5 0 1 1 16 27.5zm6.3-8.6c-.3-.2-2-.1-2.3-1.1-.3-.1-.6-.2-.8.2s-.9 1.1-1.1 1.3-.4.2-.7.1a9.2 9.2 0 0 1-2.7-1.7 10.2 10.2 0 0 1-1.9-2.3c-.2-.3 0-.5.1-.7s.3-.4.5-.5.2-.4.3-.6 0-.4 0-.6-.8-2-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7a1.4 1.4 0 0 0-1 .5 4.3 4.3 0 0 0-1.3 3.2 7.5 7.5 0 0 0 1.6 4 17.2 17.2 0 0 0 6.6 5.8 22.5 22.5 0 0 0 2.2.8 5.3 5.3 0 0 0 2.4.2 3.9 3.9 0 0 0 2.6-1.8 3.2 3.2 0 0 0 .2-1.8c-.2-.2-.5-.3-.8-.5z" fill="#FFF"/></svg>
+    <span class="float-whatsapp-tooltip">Cotação Rápida WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
