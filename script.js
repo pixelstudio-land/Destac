@@ -1,30 +1,53 @@
 /* ==========================================================================
    DESTAC PISOS — DESIGN MODERNO
-   Script Global, Calculadora Interativa & Conversão
+   Script Global, Calculadora Interativa & Conversão Respondi App
+   Pixel Studio
    ========================================================================== */
 
+/* ── CONFIGURAÇÃO CENTRAL DE CONVERSÃO RESPONDI APP ──────────────────────── */
+// ⚠️ CONFIGURE AQUI O LINK OFICIAL DO FORMULÁRIO RESPONDI APP QUANDO GERADO:
+const FORMS = {
+  default:   "https://form.respondi.app/destac",       // Formulário Geral / Cotação
+  belka:     "https://form.respondi.app/destac-belka", // Oferta Belka
+  arquitech: "https://form.respondi.app/destac-arq",   // Oferta Arquitech
+  revenda:   "https://form.respondi.app/destac-cnpj"   // Revenda / Construtoras
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+  applyCTA();
   initHeader();
   initMobileDrawer();
   initCalculator();
   initGallery();
   initFAQ();
-  initLeadForm();
   initScrollAnimations();
-  initUTMTracking();
 });
 
-/* ── CONFIGURAÇÕES GERAIS ────────────────────────────────────────────────── */
-const CONFIG = {
-  whatsappNumber: '5511999999999', // Substituir pelo número comercial oficial
-  defaultMessage: 'Olá! Gostaria de solicitar uma cotação de pisos na Destac Pisos.',
-  obrigadoUrl: 'obrigado.html'
-};
+/* ── 1. ATRIBUIÇÃO CENTRAL DE CONVERSÃO RESPONDI APP ─────────────────────── */
+function applyCTA() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmString = window.location.search; // Mantém UTMs da campanha
 
-/* ── 1. HEADER & STICKY BEHAVIOR ─────────────────────────────────────────── */
+  document.querySelectorAll("[data-cta='form'], .float-cta, .mobile-sticky-bar a").forEach(el => {
+    const specificProd = el.getAttribute('data-product');
+    let targetForm = FORMS.default;
+
+    if (specificProd && FORMS[specificProd]) {
+      targetForm = FORMS[specificProd];
+    }
+
+    // Anexa parâmetros UTM se existirem
+    const finalUrl = utmString ? `${targetForm}${targetForm.includes('?') ? '&' : '?'}${urlParams.toString()}` : targetForm;
+    
+    el.href = finalUrl;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+  });
+}
+
+/* ── 2. HEADER & STICKY BEHAVIOR ─────────────────────────────────────────── */
 function initHeader() {
   const header = document.getElementById('header');
-  const stickyBar = document.getElementById('mobile-sticky-bar');
 
   const onScroll = () => {
     const scrollY = window.scrollY;
@@ -36,7 +59,7 @@ function initHeader() {
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 
-/* ── 2. MENU MOBILE DRAWER ───────────────────────────────────────────────── */
+/* ── 3. MENU MOBILE DRAWER ───────────────────────────────────────────────── */
 function initMobileDrawer() {
   const toggleBtn = document.getElementById('menu-toggle');
   const closeBtn = document.getElementById('mobile-drawer-close');
@@ -63,7 +86,7 @@ function initMobileDrawer() {
   });
 }
 
-/* ── 3. CALCULADORA INTERATIVA DE m² ─────────────────────────────────────── */
+/* ── 4. CALCULADORA INTERATIVA DE m² ─────────────────────────────────────── */
 let currentProduct = {
   name: 'Vinílico Belka',
   price: 48.99
@@ -88,7 +111,7 @@ function initCalculator() {
   const radioInputs = document.querySelectorAll('input[name="customer-type"]');
   const totalDisplay = document.getElementById('calc-total-display');
   const centsDisplay = document.getElementById('calc-cents-display');
-  const btnWhatsApp = document.getElementById('btn-calc-whatsapp');
+  const btnCalc = document.getElementById('btn-calc-action');
 
   if (!slider || !totalDisplay) return;
 
@@ -103,20 +126,10 @@ function initCalculator() {
     totalDisplay.textContent = integerFormatted;
     if (centsDisplay) centsDisplay.textContent = ',' + parts[1];
 
-    // Atualiza link do WhatsApp
-    const selectedRadio = document.querySelector('input[name="customer-type"]:checked');
-    const customerType = selectedRadio ? selectedRadio.value : 'Pessoa Física';
-
-    const msg = `Olá! Fiz uma simulação no site da Destac Pisos:\n\n` +
-      `📦 Produto: ${currentProduct.name} (R$ ${currentProduct.price.toFixed(2).replace('.', ',')}/m²)\n` +
-      `📐 Metragem estimada: ${sqm} m²\n` +
-      `💼 Perfil de compra: ${customerType}\n` +
-      `💰 Valor estimado do material: R$ ${integerFormatted},${parts[1]}\n\n` +
-      `Gostaria de receber a cotação oficial com cálculo de rodapés e frete!`;
-
-    const url = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
-    if (btnWhatsApp) {
-      btnWhatsApp.href = url;
+    if (btnCalc) {
+      btnCalc.href = FORMS.default;
+      btnCalc.target = "_blank";
+      btnCalc.rel = "noopener noreferrer";
     }
   }
 
@@ -134,19 +147,16 @@ function initCalculator() {
     });
   });
 
-  // Slider de metragem
   slider.addEventListener('input', updateCalculation);
 
-  // Radio button tipo de cliente
   radioInputs.forEach(radio => {
     radio.addEventListener('change', updateCalculation);
   });
 
-  // Executa inicial
   updateCalculation();
 }
 
-/* ── 4. GALERIA & LIGHTBOX ───────────────────────────────────────────────── */
+/* ── 5. GALERIA & LIGHTBOX ───────────────────────────────────────────────── */
 const galleryData = [
   { src: 'images/ambiente-living.jpg', title: 'Living Integrado', sub: 'Piso Vinílico Amadeirado Acetinado' },
   { src: 'images/ambiente-sala.jpg', title: 'Sala Contemporânea', sub: 'Acabamento sem emendas aparentes' },
@@ -232,7 +242,7 @@ function changeLightboxImage(direction) {
   }
 }
 
-/* ── 5. FAQ ACCORDION ────────────────────────────────────────────────────── */
+/* ── 6. FAQ ACCORDION ────────────────────────────────────────────────────── */
 function initFAQ() {
   const faqItems = document.querySelectorAll('.faq-item');
 
@@ -243,7 +253,6 @@ function initFAQ() {
     btn.addEventListener('click', () => {
       const isOpen = item.classList.contains('active');
 
-      // Fecha todos os outros
       faqItems.forEach(i => {
         i.classList.remove('active');
         const q = i.querySelector('.faq-question');
@@ -255,38 +264,6 @@ function initFAQ() {
         btn.setAttribute('aria-expanded', 'true');
       }
     });
-  });
-}
-
-/* ── 6. LEAD FORM SUBMISSION ─────────────────────────────────────────────── */
-function initLeadForm() {
-  const form = document.getElementById('lead-form');
-  if (!form) return;
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById('lead-name').value.trim();
-    const phone = document.getElementById('lead-phone').value.trim();
-    const product = document.getElementById('lead-product').value;
-    const sqm = document.getElementById('lead-sqm').value.trim();
-
-    const msg = `Olá Destac Pisos! Solicito cotação através do formulário do site:\n\n` +
-      `👤 Nome: ${name}\n` +
-      `📱 Telefone: ${phone}\n` +
-      `📦 Interesse: ${product}\n` +
-      (sqm ? `📐 Metragem aproximada: ${sqm} m²\n\n` : `\n`) +
-      `Aguardo retorno com as condições comerciais!`;
-
-    const whatsappUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
-
-    // Armazena dados de sessão para a página de obrigado
-    sessionStorage.setItem('destac_lead_name', name);
-    sessionStorage.setItem('destac_lead_wa', whatsappUrl);
-
-    // Abre o WhatsApp em nova aba e redireciona para obrigado.html
-    window.open(whatsappUrl, '_blank');
-    window.location.href = CONFIG.obrigadoUrl;
   });
 }
 
@@ -308,22 +285,4 @@ function initScrollAnimations() {
   });
 
   elements.forEach(el => observer.observe(el));
-}
-
-/* ── 8. CAPTURA DE PARÂMETROS UTM ────────────────────────────────────────── */
-function initUTMTracking() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const utmSource = urlParams.get('utm_source');
-  const utmMedium = urlParams.get('utm_medium');
-  const utmCampaign = urlParams.get('utm_campaign');
-
-  if (utmSource || utmCampaign) {
-    const utmSummary = ` [Origem: ${utmSource || ''} / Campanha: ${utmCampaign || ''}]`;
-    document.querySelectorAll('[data-cta]').forEach(cta => {
-      const currentHref = cta.getAttribute('href');
-      if (currentHref && currentHref.includes('wa.me')) {
-        cta.setAttribute('href', currentHref + encodeURIComponent(utmSummary));
-      }
-    });
-  }
 }

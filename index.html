@@ -36,8 +36,7 @@
     "image": "https://pixelstudio-land.github.io/Destac/images/hero-bg.jpg",
     "description": "Distribuição e venda de pisos laminados e vinílicos de alta qualidade a preço de revenda para CPF e CNPJ.",
     "priceRange": "R$ 48,99 - R$ 150,00",
-    "currenciesAccepted": "BRL",
-    "paymentAccepted": "Pix, Boleto, Cartão de Crédito, Transferência"
+    "currenciesAccepted": "BRL"
   }
   </script>
 </head>
@@ -56,7 +55,7 @@
         <ul class="nav-list">
           <li><a href="#produtos" class="nav-link">Produtos</a></li>
           <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
-          <li><a href="#calculadora" class="nav-link">Simular m²</a></li>
+          <li><a href="#calculadora" class="nav-link">Simulador m²</a></li>
           <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
           <li><a href="#galeria" class="nav-link">Ambientes</a></li>
           <li><a href="#depoimentos" class="nav-link">Avaliações</a></li>
@@ -66,10 +65,10 @@
 
       <div class="header-actions">
         <a href="#calculadora" class="btn btn-sm btn-outline header-sim-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
           Simulador
         </a>
-        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pisos%20na%20Destac%20Pisos." class="btn btn-sm btn-primary header-cta-btn" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-header">
+        <a href="#" class="btn btn-sm btn-primary header-cta-btn" data-cta="form" id="header-cta">
           <span>Solicitar Cotação</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -96,8 +95,8 @@
       <li><a href="#faq" class="mobile-nav-link">Perguntas Frequentes</a></li>
     </ul>
     <div class="mobile-drawer-footer">
-      <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destac%20Pisos%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o." class="btn btn-primary btn-block" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-drawer">
-        Falar com Especialista no WhatsApp
+      <a href="#" class="btn btn-primary btn-block" data-cta="form">
+        Iniciar Cotação Oficial
       </a>
       <p class="mobile-drawer-note">Atendimento rápido para CPF e CNPJ</p>
     </div>
@@ -153,7 +152,7 @@
           </div>
 
           <div class="hero-cta-group reveal-up delay-3">
-            <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pisos%20com%20a%20Destac%20Pisos." class="btn btn-lg btn-primary btn-glow" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-hero">
+            <a href="#" class="btn btn-lg btn-primary btn-glow" data-cta="form" id="hero-cta-main">
               <span>SOLICITAR MINHA COTAÇÃO AGORA</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
@@ -164,7 +163,7 @@
 
           <div class="hero-stats reveal-up delay-4">
             <div class="stat-item">
-              <span class="stat-num" data-target="100">100%</span>
+              <span class="stat-num">100%</span>
               <span class="stat-label">Resistente à Água (Vinílico)</span>
             </div>
             <div class="stat-divider"></div>
@@ -184,7 +183,7 @@
     </section>
 
     <!-- ==========================================
-         OFERTAS EM DESTAQUE (DIRETO DO BRIEFING)
+         OFERTAS EM DESTAQUE (FOTOS REAIS DE ALTA DEFINIÇÃO)
          ========================================== -->
     <section class="section section-offers" id="ofertas">
       <div class="container">
@@ -203,7 +202,7 @@
               <span class="brand-chip">BELKA PISOS</span>
             </div>
             <div class="offer-image-box">
-              <img src="images/piso-vinilico-belka.jpg" alt="Piso Vinílico Belka Amadeirado" class="offer-img" loading="lazy">
+              <img src="images/oferta-belka.jpg" alt="Piso Vinílico Belka Amadeirado Natural" class="offer-img" loading="lazy">
               <div class="offer-tag-float">100% Resistente à Água</div>
             </div>
             <div class="offer-info">
@@ -227,7 +226,7 @@
                 <div class="price-terms">À vista • CPF ou CNPJ • Preço de Revenda</div>
               </div>
 
-              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20oferta%20do%20Piso%20Vin%C3%ADlico%20BELKA%20por%20R$%2048,99/m%C2%B2." class="btn btn-primary btn-block btn-offer" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-belka">
+              <a href="#" class="btn btn-primary btn-block btn-offer" data-cta="form" data-product="belka">
                 <span>Garantir Oferta Belka</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
@@ -241,7 +240,7 @@
               <span class="brand-chip">ARQUITECH REVESTIMENTOS</span>
             </div>
             <div class="offer-image-box">
-              <img src="images/piso-vinilico-arquitech.jpg" alt="Piso Vinílico Arquitech de Alta Densidade" class="offer-img" loading="lazy">
+              <img src="images/oferta-arquitech.jpg" alt="Piso Vinílico Arquitech de Alta Densidade" class="offer-img" loading="lazy">
               <div class="offer-tag-float">Alta Durabilidade</div>
             </div>
             <div class="offer-info">
@@ -265,7 +264,7 @@
                 <div class="price-terms">À vista • CPF ou CNPJ • Condições Especiais</div>
               </div>
 
-              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Tenho%20interesse%20na%20oferta%20do%20Piso%20Vin%C3%ADlico%20ARQUITECH%20por%20R$%2050,00/m%C2%B2." class="btn btn-primary btn-block btn-offer" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-arquitech">
+              <a href="#" class="btn btn-primary btn-block btn-offer" data-cta="form" data-product="arquitech">
                 <span>Garantir Oferta Arquitech</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </a>
@@ -278,14 +277,14 @@
         <div class="commercial-banner reveal-up">
           <div class="commercial-banner-content">
             <div class="commercial-icon">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
             </div>
             <div>
               <h4>É Arquiteto, Construtora ou Revendedor?</h4>
               <p>Temos tabelas com margens agressivas e faturamento direto com atendimento prioritário.</p>
             </div>
           </div>
-          <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Sou%20revendedor/arquiteto/construtor%20e%20gostaria%20de%20conhecer%20as%20condi%C3%A7%C3%B5es%20especiais%20da%20Destac%20Pisos." class="btn btn-sm btn-white" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-revenda">
+          <a href="#" class="btn btn-sm btn-white" data-cta="form" data-product="revenda">
             Condições para Parceiros
           </a>
         </div>
@@ -293,7 +292,7 @@
     </section>
 
     <!-- ==========================================
-         PRODUTOS PRINCIPAIS (VINÍLICO & LAMINADO)
+         PRODUTOS PRINCIPAIS (ÍCONES VETORIAIS PROFISSIONAIS)
          ========================================== -->
     <section class="section section-products" id="produtos">
       <div class="container">
@@ -320,28 +319,39 @@
               
               <div class="product-specs-grid">
                 <div class="spec-item">
-                  <span class="spec-icon">💧</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                  </div>
                   <div>
                     <strong>Resistência à Água</strong>
                     <small>Ideal para cozinhas e lavabos</small>
                   </div>
                 </div>
+
                 <div class="spec-item">
-                  <span class="spec-icon">✨</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.91 5.89h6.19l-5.01 3.64 1.91 5.89-5-3.64-5 3.64 1.91-5.89-5.01-3.64h6.19z"/></svg>
+                  </div>
                   <div>
                     <strong>Fácil Limpeza</strong>
-                    <small>Apenas pano úmido e detergente neutro</small>
+                    <small>Apenas pano úmido e sabão neutro</small>
                   </div>
                 </div>
+
                 <div class="spec-item">
-                  <span class="spec-icon">🌡️</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+                  </div>
                   <div>
                     <strong>Conforto Térmico</strong>
                     <small>Agradável para andar descalço</small>
                   </div>
                 </div>
+
                 <div class="spec-item">
-                  <span class="spec-icon">🔇</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+                  </div>
                   <div>
                     <strong>Silêncio Acústico</strong>
                     <small>Sem o 'toc-toc' de calçados</small>
@@ -372,28 +382,39 @@
               
               <div class="product-specs-grid">
                 <div class="spec-item">
-                  <span class="spec-icon">🌲</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M12 12c-4-4-5-8-5-8s4 1 8 5c4-4 8-5 8-5s-1 4-5 8"/><path d="M7 17a5 5 0 0 0 10 0"/></svg>
+                  </div>
                   <div>
                     <strong>Elegância Natural</strong>
-                    <small>Réplicas perfeitas de madeiras nobres</small>
+                    <small>Padrões de madeiras nobres</small>
                   </div>
                 </div>
+
                 <div class="spec-item">
-                  <span class="spec-icon">🎨</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  </div>
                   <div>
                     <strong>Variedade de Padrões</strong>
                     <small>Do rústico ao minimalista claro</small>
                   </div>
                 </div>
+
                 <div class="spec-item">
-                  <span class="spec-icon">⚡</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </div>
                   <div>
                     <strong>Instalação Rápida</strong>
                     <small>Pronto para uso quase imediato</small>
                   </div>
                 </div>
+
                 <div class="spec-item">
-                  <span class="spec-icon">💰</span>
+                  <div class="spec-svg-wrap">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                  </div>
                   <div>
                     <strong>Custo-Benefício</strong>
                     <small>Maior economia por metro quadrado</small>
@@ -414,7 +435,7 @@
     </section>
 
     <!-- ==========================================
-         CALCULADORA INTERATIVA DE m²
+         CALCULADORA INTERATIVA DE m² (DESIGN REFINADO)
          ========================================== -->
     <section class="section section-calc" id="calculadora">
       <div class="container">
@@ -424,13 +445,13 @@
             <span class="badge-pill">SIMULADOR INTELIGENTE</span>
             <h2 class="calc-title">Simule o Investimento do seu Projeto</h2>
             <p class="calc-desc">
-              Descubra uma estimativa aproximada em segundos e receba uma proposta personalizada e detalhada no seu WhatsApp.
+              Descubra uma estimativa aproximada em segundos e receba uma proposta personalizada e detalhada no seu formulário de cotação.
             </p>
 
             <div class="calc-benefits">
               <div class="benefit-row">
                 <div class="benefit-dot"></div>
-                <span>Valores sem surpresas e direto da fábrica</span>
+                <span>Valores diretos da fábrica sem intermediários</span>
               </div>
               <div class="benefit-row">
                 <div class="benefit-dot"></div>
@@ -438,15 +459,29 @@
               </div>
               <div class="benefit-row">
                 <div class="benefit-dot"></div>
-                <span>Atendimento técnico para tirar todas as dúvidas</span>
+                <span>Atendimento consultivo rápido e sem burocracia</span>
               </div>
             </div>
 
-            <div class="calc-direct-card">
-              <img src="images/criativo-destac-01.jpg" alt="Destac Pisos Sem Burocracia" class="calc-thumb">
-              <div>
-                <strong>Sem Burocracia!</strong>
-                <p>Cotação rápida e atendimento especializado direto pelo WhatsApp.</p>
+            <!-- Trust Features Card Refinado -->
+            <div class="calc-trust-box">
+              <div class="trust-item">
+                <div class="trust-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                <div>
+                  <strong>Preço Garantido</strong>
+                  <small>Sem taxas extras ou surpresas</small>
+                </div>
+              </div>
+              <div class="trust-item">
+                <div class="trust-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <strong>Garantia de Fábrica</strong>
+                  <small>Produtos de alta durabilidade</small>
+                </div>
               </div>
             </div>
           </div>
@@ -489,7 +524,7 @@
 
             <div class="form-group">
               <div class="range-header">
-                <label class="form-label" for="metragem-input">3. Metragem Estimada do Ambiente:</label>
+                <label class="form-label" for="metragem-slider">3. Metragem Estimada do Ambiente:</label>
                 <span class="range-val-badge"><span id="metragem-display">35</span> m²</span>
               </div>
               <input type="range" id="metragem-slider" min="10" max="300" step="5" value="35" class="range-slider">
@@ -512,9 +547,9 @@
               <p class="result-hint">*Valor à vista estimado do produto. Condições de frete e rodapés confirmadas pelo consultor.</p>
             </div>
 
-            <a href="#" id="btn-calc-whatsapp" class="btn btn-primary btn-block btn-lg" target="_blank" rel="noopener noreferrer">
-              <span>Receber Proposta Completa no WhatsApp</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            <a href="#" id="btn-calc-action" class="btn btn-primary btn-block btn-lg" data-cta="form">
+              <span>AVANÇAR PARA COTAÇÃO OFICIAL</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
 
@@ -796,11 +831,11 @@
 
           <div class="faq-item reveal-up">
             <button class="faq-question" aria-expanded="false">
-              <span>Como funciona o atendimento e a entrega?</span>
+              <span>Como funciona a entrega e o prazo?</span>
               <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="faq-answer">
-              <p>Ao solicitar a cotação no WhatsApp, um de nossos especialistas calcula a metragem exata (já prevendo perdas e rodapés) e informa o prazo de expedição ágil para a sua localidade.</p>
+              <p>Trabalhamos com estoque pronto para expedição ágil. Ao preencher o formulário de cotação com a sua metragem e CEP, informamos o prazo e a melhor logística para sua região.</p>
             </div>
           </div>
 
@@ -819,7 +854,7 @@
     </section>
 
     <!-- ==========================================
-         SEÇÃO FINAL DE FECHAMENTO (CTA PRINCIPAL)
+         SEÇÃO FINAL DE FECHAMENTO (MASTER CTA RESPONDI)
          ========================================== -->
     <section class="section section-cta-final" id="contato">
       <div class="cta-final-bg">
@@ -836,36 +871,20 @@
           </h2>
 
           <p class="cta-final-desc">
-            Escolha qualidade, praticidade e um acabamento que valoriza seu ambiente. Solicite sua cotação agora sem compromisso e sem burocracia!
+            Escolha qualidade, praticidade e um acabamento que valoriza seu ambiente. Solicite sua cotação agora sem compromisso e garanta preço direto de fábrica.
           </p>
 
-          <div class="cta-form-box">
-            <form id="lead-form" class="quick-lead-form">
-              <div class="form-row">
-                <input type="text" id="lead-name" placeholder="Seu Nome Completo" required class="form-input">
-                <input type="tel" id="lead-phone" placeholder="Seu WhatsApp com DDD" required class="form-input">
-              </div>
-              <div class="form-row">
-                <select id="lead-product" class="form-input">
-                  <option value="Piso Vinílico">Interesse em: Piso Vinílico</option>
-                  <option value="Piso Laminado">Interesse em: Piso Laminado</option>
-                  <option value="Piso Vinílico Belka (R$ 48,99/m²)">Oferta: Vinílico Belka (R$ 48,99/m²)</option>
-                  <option value="Piso Vinílico Arquitech (R$ 50,00/m²)">Oferta: Vinílico Arquitech (R$ 50,00/m²)</option>
-                  <option value="Condições de Revenda / CNPJ">Condições para Revenda / CNPJ</option>
-                </select>
-                <input type="number" id="lead-sqm" placeholder="Metragem Estimada (m²)" class="form-input" min="1">
-              </div>
-              <button type="submit" class="btn btn-primary btn-lg btn-block btn-lead-submit">
-                <span>SOLICITAR MINHA COTAÇÃO NO WHATSAPP</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
-            </form>
+          <div class="cta-action-wrap">
+            <a href="#" class="btn btn-primary btn-lg btn-glow btn-block-mobile" data-cta="form" id="final-cta">
+              <span>SOLICITAR MINHA COTAÇÃO PERSONALIZADA</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
           </div>
 
           <div class="cta-guarantees">
-            <span>🔒 Seus dados estão 100% seguros</span>
-            <span>⚡ Resposta ágil no WhatsApp</span>
-            <span>🏷️ Preço garantido de fábrica</span>
+            <span>🔒 Atendimento 100% Seguro</span>
+            <span>⚡ Retorno Rápido da Equipe</span>
+            <span>🏷️ Preço Garantido de Fábrica</span>
           </div>
         </div>
       </div>
@@ -909,15 +928,12 @@
       </div>
 
       <div class="footer-col">
-        <h4 class="footer-heading">Atendimento Direto</h4>
+        <h4 class="footer-heading">Cotação Rápida</h4>
         <p class="footer-contact-item">
-          <strong>WhatsApp:</strong> (11) 99999-9999
+          Preencha nosso formulário oficial para receber a proposta detalhada para seu projeto.
         </p>
-        <p class="footer-contact-item">
-          <strong>Horário:</strong> Seg a Sex das 08h às 18h | Sáb das 08h às 13h
-        </p>
-        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20da%20Destac%20Pisos." class="btn btn-sm btn-outline footer-btn" target="_blank" rel="noopener noreferrer">
-          Iniciar Conversa WhatsApp
+        <a href="#" class="btn btn-sm btn-outline footer-btn" data-cta="form">
+          Preencher Formulário de Cotação
         </a>
       </div>
 
@@ -939,16 +955,16 @@
       <span class="sticky-label">Pisos a partir de</span>
       <span class="sticky-price">R$ 48,99/m²</span>
     </div>
-    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Destac%20Pisos%20e%20gostaria%20de%20uma%20cota%C3%A7%C3%A3o." class="btn btn-primary btn-sm sticky-cta" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-sticky">
+    <a href="#" class="btn btn-primary btn-sm sticky-cta" data-cta="form">
       <span>Pedir Cotação</span>
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
 
-  <!-- Botão Flutuante do WhatsApp -->
-  <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o%20de%20pisos%20na%20Destac%20Pisos." class="float-whatsapp" aria-label="Falar pelo WhatsApp" target="_blank" rel="noopener noreferrer" data-cta="whatsapp-float">
-    <svg viewBox="0 0 32 32" class="float-whatsapp-icon"><path d="M16 2a14 14 0 0 0-12 21.2L2 30l7-1.8A14 14 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.8-1.6l-.4-.3-4.3 1.1 1.2-4.2-.3-.4A11.5 11.5 0 1 1 16 27.5zm6.3-8.6c-.3-.2-2-.1-2.3-1.1-.3-.1-.6-.2-.8.2s-.9 1.1-1.1 1.3-.4.2-.7.1a9.2 9.2 0 0 1-2.7-1.7 10.2 10.2 0 0 1-1.9-2.3c-.2-.3 0-.5.1-.7s.3-.4.5-.5.2-.4.3-.6 0-.4 0-.6-.8-2-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7a1.4 1.4 0 0 0-1 .5 4.3 4.3 0 0 0-1.3 3.2 7.5 7.5 0 0 0 1.6 4 17.2 17.2 0 0 0 6.6 5.8 22.5 22.5 0 0 0 2.2.8 5.3 5.3 0 0 0 2.4.2 3.9 3.9 0 0 0 2.6-1.8 3.2 3.2 0 0 0 .2-1.8c-.2-.2-.5-.3-.8-.5z" fill="#FFF"/></svg>
-    <span class="float-whatsapp-tooltip">Cotação Rápida WhatsApp</span>
+  <!-- Botão Flutuante de Conversão (Respondi) -->
+  <a href="#" class="float-cta" aria-label="Solicitar Cotação" data-cta="form">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+    <span class="float-cta-tooltip">Solicitar Cotação Online</span>
   </a>
 
   <script src="script.js"></script>

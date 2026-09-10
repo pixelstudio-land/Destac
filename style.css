@@ -1,6 +1,6 @@
 /* ==========================================================================
    DESTAC PISOS — DESIGN MODERNO
-   Design System & Estilos de Alta Conversão
+   Design System & Estilos de Alta Conversão (Pixel Studio)
    ========================================================================== */
 
 /* ── Custom Properties & Tokens ────────────────────────────────────────── */
@@ -918,18 +918,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .spec-item {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 
-.spec-icon {
-  font-size: 1.3rem;
-  line-height: 1;
+.spec-svg-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--ruby-soft);
+  border: 1px solid var(--border-ruby);
+  color: #FF707A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .spec-item strong {
   display: block;
   font-size: 0.88rem;
   color: var(--text-white);
+  line-height: 1.2;
 }
 
 .spec-item small {
@@ -975,7 +985,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .benefit-row {
@@ -993,31 +1003,44 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--ruby-primary);
 }
 
-.calc-direct-card {
+.calc-trust-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.trust-item {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  padding: 14px;
-}
-
-.calc-thumb {
-  width: 60px;
-  height: 60px;
   border-radius: var(--radius-sm);
-  object-fit: cover;
+  padding: 12px;
 }
 
-.calc-direct-card strong {
+.trust-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ruby-soft);
+  color: #FF8F96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trust-item strong {
   display: block;
-  font-size: 0.95rem;
+  font-size: 0.84rem;
   color: #FFFFFF;
 }
 
-.calc-direct-card p {
-  font-size: 0.8rem;
+.trust-item small {
+  font-size: 0.72rem;
   color: var(--text-muted);
 }
 
@@ -1592,7 +1615,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
-/* ── Seção Final CTA ─────────────────────────────────────────────────────── */
+/* ── Seção Final CTA (Master Respondi Card) ───────────────────────────────── */
 .section-cta-final {
   position: relative;
   padding: 110px 0;
@@ -1633,7 +1656,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-card);
   border: 1px solid var(--border-ruby);
   border-radius: var(--radius-xl);
-  padding: 50px;
+  padding: 60px 48px;
   text-align: center;
   box-shadow: var(--shadow-lg), 0 0 40px rgba(158, 26, 34, 0.2);
 }
@@ -1643,60 +1666,27 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.1em;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .cta-final-title {
-  font-size: 2.5rem;
-  margin-bottom: 14px;
+  font-size: 2.6rem;
+  margin-bottom: 16px;
   letter-spacing: -0.02em;
 }
 
 .cta-final-desc {
-  font-size: 1.08rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   max-width: 650px;
-  margin: 0 auto 32px;
-  line-height: 1.6;
+  margin: 0 auto 36px;
+  line-height: 1.65;
 }
 
-.cta-form-box {
-  max-width: 680px;
-  margin: 0 auto 24px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
-  margin-bottom: 14px;
-}
-
-.form-input {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-sm);
-  padding: 14px 18px;
-  color: #FFF;
-  font-size: 0.92rem;
-  transition: all var(--transition-fast);
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: var(--ruby-primary);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 14px rgba(158, 26, 34, 0.3);
-}
-
-.form-input option {
-  background: #15171D;
-  color: #FFF;
-}
-
-.btn-lead-submit {
-  box-shadow: var(--shadow-ruby);
+.cta-action-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
 }
 
 .cta-guarantees {
@@ -1704,7 +1694,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 24px;
-  font-size: 0.8rem;
+  font-size: 0.84rem;
   color: var(--text-muted);
 }
 
@@ -1764,18 +1754,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-contact-item {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--text-muted);
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-.footer-contact-item strong {
-  color: #FFFFFF;
+  margin-bottom: 16px;
+  line-height: 1.55;
 }
 
 .footer-btn {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .footer-bottom {
@@ -1787,7 +1773,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   color: var(--text-muted);
   flex-wrap: wrap;
   gap: 12px;
@@ -1795,44 +1781,46 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-pixel {
   color: #FF707A;
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* ── Floating WhatsApp Button ────────────────────────────────────────────── */
-.float-whatsapp {
+/* ── Floating CTA Button (Respondi) ──────────────────────────────────────── */
+.float-cta {
   position: fixed;
   bottom: 28px;
   right: 28px;
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
-  background: #25D366;
+  background: linear-gradient(135deg, var(--ruby-light) 0%, var(--ruby-primary) 100%);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 99;
-  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  box-shadow: 0 8px 24px var(--ruby-glow);
   transition: all var(--transition-smooth);
+  animation: float-pulse 3.5s infinite;
 }
 
-.float-whatsapp:hover {
+@keyframes float-pulse {
+  0%, 100% { box-shadow: 0 8px 24px var(--ruby-glow); }
+  50% { box-shadow: 0 12px 32px rgba(192, 38, 47, 0.6); }
+}
+
+.float-cta:hover {
   transform: scale(1.1);
-  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+  box-shadow: 0 14px 36px rgba(192, 38, 47, 0.7);
 }
 
-.float-whatsapp-icon {
-  width: 32px;
-  height: 32px;
-}
-
-.float-whatsapp-tooltip {
+.float-cta-tooltip {
   position: absolute;
   right: 70px;
   background: #111;
   color: #FFF;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: var(--radius-sm);
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 700;
   white-space: nowrap;
   pointer-events: none;
@@ -1843,7 +1831,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid var(--border-light);
 }
 
-.float-whatsapp:hover .float-whatsapp-tooltip {
+.float-cta:hover .float-cta-tooltip {
   opacity: 1;
   transform: translateX(0);
 }
@@ -1929,17 +1917,17 @@ h1, h2, h3, h4, h5, h6 {
   .hero-stats { flex-direction: column; align-items: flex-start; gap: 16px; }
   .stat-divider { display: none; }
   
-  .form-row { grid-template-columns: 1fr; }
-  .cta-final-card { padding: 30px 20px; }
-  .cta-final-title { font-size: 1.9rem; }
+  .cta-final-card { padding: 36px 20px; }
+  .cta-final-title { font-size: 1.95rem; }
+  .btn-block-mobile { width: 100%; }
   
   .calc-pills { grid-template-columns: 1fr; }
+  .calc-trust-box { grid-template-columns: 1fr; }
   
   .footer-container { grid-template-columns: 1fr; gap: 32px; }
   
   .mobile-sticky-bar { display: flex; }
-  .float-whatsapp { bottom: 76px; right: 18px; width: 52px; height: 52px; }
-  .float-whatsapp-icon { width: 28px; height: 28px; }
+  .float-cta { bottom: 76px; right: 18px; width: 50px; height: 50px; }
 }
 
 @media (max-width: 480px) {
