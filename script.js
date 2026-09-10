@@ -5,7 +5,7 @@
    ========================================================================== */
 
 /* ── CONFIGURAÇÃO CENTRAL DE CONVERSÃO RESPONDI APP ──────────────────────── */
-// ⚠️ CONFIGURE AQUI O LINK OFICIAL DO FORMULÁRIO RESPONDI APP QUANDO GERADO:
+// CONFIGURE AQUI O LINK OFICIAL DO FORMULÁRIO RESPONDI APP QUANDO GERADO:
 const FORMS = {
   default:   "https://form.respondi.app/destac",       // Formulário Geral / Cotação
   belka:     "https://form.respondi.app/destac-belka", // Oferta Belka

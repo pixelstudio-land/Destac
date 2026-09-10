@@ -4,11 +4,11 @@ Landing Page comercial e promocional de alta conversão para a **Destac Pisos �
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - **HTML5 Semântico**: Estrutura acessível, metatags OpenGraph, Schema.org (HomeGoodsStore).
 - **CSS3 Vanilla Moderno**: Design system com Glassmorphism, CSS Custom Properties, layout fluido flex/grid e responsividade mobile-first.
 - **JavaScript Vanilla**:
-  - Calculadora dinâmica de m² com cálculo em tempo real e geração de link WhatsApp pré-formatado.
+  - Calculadora dinâmica de m² com cálculo em tempo real e encaminhamento para o funil Respondi App.
   - Galeria de fotos de ambientes com filtros por categoria e Lightbox modal.
   - Acordeão animado de FAQ.
   - Rastreamento dinâmico de parâmetros UTM.
@@ -16,21 +16,21 @@ Landing Page comercial e promocional de alta conversão para a **Destac Pisos �
 
 ---
 
-## 📁 Estrutura de Arquivos
+## Estrutura de Arquivos
 ```
 Destac Pisos/
 ├── index.html            # Landing Page Principal
 ├── obrigado.html         # Página de Agradecimento e Rastreamento de Leads
 ├── style.css             # Design System e Estilos Responsivos
-├── script.js             # Interatividades, Calculadora e Conversão
+├── script.js             # Interatividades, Calculadora e Conversão Respondi
 ├── README.md             # Documentação do Projeto
 └── images/               # Fotos de Alta Resolução e Vetores do Logotipo
     ├── logo.svg
     ├── logo-light.svg
     ├── favicon.png
     ├── hero-bg.jpg
-    ├── piso-vinilico-belka.jpg
-    ├── piso-vinilico-arquitech.jpg
+    ├── oferta-belka.jpg
+    ├── oferta-arquitech.jpg
     ├── vinilico-detalhe.jpg
     ├── laminado-detalhe.jpg
     └── ambientes...
@@ -38,7 +38,7 @@ Destac Pisos/
 
 ---
 
-## 🌐 Publicação no GitHub Pages
+## Publicação no GitHub Pages
 Para publicar via GitHub Pages:
 1. Acesse o repositório no GitHub: `https://github.com/pixelstudio-land/Destac`
 2. Vá em **Settings** > **Pages**
@@ -47,4 +47,4 @@ Para publicar via GitHub Pages:
 
 ---
 
-Desenvolvido com excelência visual e foco em conversão pela **Pixel**.
+Desenvolvido com excelência visual e foco em conversão pela **Pixel Studio**.
