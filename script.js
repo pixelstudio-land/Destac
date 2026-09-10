@@ -1,16 +1,13 @@
 /* ==========================================================================
    DESTAC PISOS — DESIGN MODERNO
-   Script Global, Calculadora Interativa & Conversão Respondi App
+   Script Global, Calculadora Interativa & Conversão WhatsApp Direto
    Pixel Studio
    ========================================================================== */
 
-/* ── CONFIGURAÇÃO CENTRAL DE CONVERSÃO RESPONDI APP ──────────────────────── */
-// CONFIGURE AQUI O LINK OFICIAL DO FORMULÁRIO RESPONDI APP QUANDO GERADO:
-const FORMS = {
-  default:   "https://form.respondi.app/destac",       // Formulário Geral / Orçamento
-  belka:     "https://form.respondi.app/destac-belka", // Oferta Belka
-  arquitech: "https://form.respondi.app/destac-arq",   // Oferta Arquitech
-  revenda:   "https://form.respondi.app/destac-cnpj"   // Revenda / Construtoras
+/* ── CONFIGURAÇÕES OFICIAIS WHATSAPP ─────────────────────────────────────── */
+const CONFIG = {
+  whatsappNumber: '556198695531',
+  defaultMessage: 'Olá! Gostaria de solicitar um orçamento!'
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -21,25 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
   initGallery();
   initFAQ();
   initScrollAnimations();
+  initUTMTracking();
 });
 
-/* ── 1. ATRIBUIÇÃO CENTRAL DE CONVERSÃO RESPONDI APP ─────────────────────── */
+/* ── 1. ATRIBUIÇÃO DOS LINKS DE CONVERSÃO WHATSAPP ───────────────────────── */
+function getWhatsAppUrl(customMessage) {
+  const msg = customMessage || CONFIG.defaultMessage;
+  return `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`;
+}
+
 function applyCTA() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const utmString = window.location.search; // Mantém UTMs da campanha
-
-  document.querySelectorAll("[data-cta='form'], .float-cta, .mobile-sticky-bar a").forEach(el => {
+  document.querySelectorAll("[data-cta='whatsapp'], [data-cta='form'], .float-whatsapp, .mobile-sticky-bar a").forEach(el => {
     const specificProd = el.getAttribute('data-product');
-    let targetForm = FORMS.default;
+    let message = CONFIG.defaultMessage;
 
-    if (specificProd && FORMS[specificProd]) {
-      targetForm = FORMS[specificProd];
+    if (specificProd === 'belka') {
+      message = 'Olá! Gostaria de solicitar um orçamento do Piso Vinílico Belka!';
+    } else if (specificProd === 'arquitech') {
+      message = 'Olá! Gostaria de solicitar um orçamento do Piso Vinílico Arquitech!';
+    } else if (specificProd === 'revenda') {
+      message = 'Olá! Gostaria de solicitar um orçamento com condições especiais para revenda/CNPJ!';
     }
 
-    // Anexa parâmetros UTM se existirem
-    const finalUrl = utmString ? `${targetForm}${targetForm.includes('?') ? '&' : '?'}${urlParams.toString()}` : targetForm;
-    
-    el.href = finalUrl;
+    el.href = getWhatsAppUrl(message);
     el.target = "_blank";
     el.rel = "noopener noreferrer";
   });
@@ -126,8 +127,19 @@ function initCalculator() {
     totalDisplay.textContent = integerFormatted;
     if (centsDisplay) centsDisplay.textContent = ',' + parts[1];
 
+    const selectedRadio = document.querySelector('input[name="customer-type"]:checked');
+    const customerType = selectedRadio ? selectedRadio.value : 'Pessoa Física';
+
+    const msg = `Olá! Gostaria de solicitar um orçamento!\n\n` +
+      `Fiz uma simulação no site da Destac Pisos:\n` +
+      `• Produto: ${currentProduct.name} (R$ ${currentProduct.price.toFixed(2).replace('.', ',')}/m²)\n` +
+      `• Metragem: ${sqm} m²\n` +
+      `• Perfil: ${customerType}\n` +
+      `• Estimativa: R$ ${integerFormatted},${parts[1]}\n\n` +
+      `Gostaria de receber a proposta oficial com cálculo de rodapés e entrega!`;
+
     if (btnCalc) {
-      btnCalc.href = FORMS.default;
+      btnCalc.href = getWhatsAppUrl(msg);
       btnCalc.target = "_blank";
       btnCalc.rel = "noopener noreferrer";
     }
@@ -285,4 +297,22 @@ function initScrollAnimations() {
   });
 
   elements.forEach(el => observer.observe(el));
+}
+
+/* ── 8. CAPTURA DE PARÂMETROS UTM ────────────────────────────────────────── */
+function initUTMTracking() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const utmSource = urlParams.get('utm_source');
+  const utmMedium = urlParams.get('utm_medium');
+  const utmCampaign = urlParams.get('utm_campaign');
+
+  if (utmSource || utmCampaign) {
+    const utmSummary = ` [Origem: ${utmSource || ''} / Campanha: ${utmCampaign || ''}]`;
+    document.querySelectorAll('[data-cta]').forEach(cta => {
+      const currentHref = cta.getAttribute('href');
+      if (currentHref && currentHref.includes('wa.me')) {
+        cta.setAttribute('href', currentHref + encodeURIComponent(utmSummary));
+      }
+    });
+  }
 }
