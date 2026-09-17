@@ -1,6 +1,6 @@
 # Destac Pisos — Landing Page de Alta Conversão
 
-Landing Page comercial e promocional de alta conversão para a **Destac Pisos — Design Moderno**, especializada em distribuição e venda de pisos laminados e vinílicos a preço de revenda e direto da fábrica para CPF e CNPJ.
+Landing Page comercial e promocional de alta conversão para a **Destac Pisos — Design Moderno**, especializada em distribuição e venda de pisos vinílicos a preço de revenda e direto da fábrica para CPF e CNPJ.
 
 ---
 
@@ -32,7 +32,7 @@ Destac Pisos/
     ├── oferta-belka.jpg
     ├── oferta-arquitech.jpg
     ├── vinilico-detalhe.jpg
-    ├── laminado-detalhe.jpg
+    ├── piso-vinilico-arquitech.jpg
     └── ambientes...
 ```
 

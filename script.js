@@ -97,9 +97,11 @@ function selectProductInCalc(type) {
   const pills = document.querySelectorAll('.calc-pill');
   pills.forEach(p => {
     const prod = p.getAttribute('data-product');
-    if (type === 'vinilico' && (prod === 'belka' || prod === 'arquitech')) {
+    if (type === 'belka' && prod === 'belka') {
       p.click();
-    } else if (type === 'laminado' && prod === 'laminado') {
+    } else if (type === 'arquitech' && prod === 'arquitech') {
+      p.click();
+    } else if (type === 'vinilico' && prod === 'belka') {
       p.click();
     }
   });
